@@ -23,9 +23,9 @@ public class MainActivity extends AppWidgetProvider {
         super.onUpdate(context, appWidgetManager, appWidgetIds);
         Date date = new Date();
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.activity_main);
-        SimpleDateFormat dayFormat= new SimpleDateFormat("HH:mm:ss");
+        SimpleDateFormat dayFormat= new SimpleDateFormat("HH:mm");
         String day = dayFormat.format(date);
-        views.setTextViewText(R.id.tv, "Сейчас \n" + day);
+        views.setTextViewText(R.id.tv, "Now \n" + day);
         appWidgetManager.updateAppWidget(appWidgetIds, views);
 // здесь ваш текст
     }
