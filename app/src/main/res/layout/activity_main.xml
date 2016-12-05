@@ -8,10 +8,10 @@
             android:id="@+id/tv"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#FC4FCC"
+            android:background="#000000"
             android:gravity="center"
             android:text="Hello, world!"
-            android:textColor="#F98501"
+            android:textColor="#FFFFFF"
             android:textSize="25sp">
     </TextView>
 </RelativeLayout>
